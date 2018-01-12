@@ -1,7 +1,7 @@
 fs=require("fs")
 require("./extensions.js")()
 // path="./gardiner.tsv"
-dictionary="../my_egyptian_dictionary.txt"
+dictionary="my_egyptian_dictionary.txt"
 require("./gardiner_map.js")
 console.log(Gardiner_Map['N']);
 console.log(Gardiner_Map['KOPP']);
