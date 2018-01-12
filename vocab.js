@@ -46,5 +46,7 @@ app.listen(port, function () {
 	loadVocab();
 	// console.log(find_word("mouth"));
 	  console.log('Example app listening on http://localhost:'+port);
-	  browse("http://localhost:"+port)
+	  try{
+	  	browse("http://localhost:"+port)	  	
+	  }catch(ex){}
 });
