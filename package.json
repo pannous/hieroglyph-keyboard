@@ -18,6 +18,7 @@
     "serve-favicon": "~2.3.0",
     "websocket":"",
     "node-fetch":"",
-    "request":""
+    "request":"",
+    "json5":""
   }
 }
