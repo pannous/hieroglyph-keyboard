@@ -1,5 +1,5 @@
 fs=require("fs")
-require('/me/dev/script/javascript/extensions.js')()
+require("extensions.js")()
 // path="./gardiner.tsv"
 dictionary="../my_egyptian_dictionary.txt"
 require("./gardiner_map.js")
