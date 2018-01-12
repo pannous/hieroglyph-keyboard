@@ -9,7 +9,7 @@ console.log(Gardiner_Map['KOPP']);
 lines=[]
 gardiners=[]
 // gardiners_tsv="/me/Documents/uruk_egypt/gardiner.csv"
-gardiners_tsv="../gardiner.csv"
+gardiners_tsv="gardiner.csv"
 
 loadVocab=function () {
 	lines=fs.readFileSync(dictionary).toString().split('\n')
