@@ -11,6 +11,7 @@ app.use('/script', express.static('script'));
 
 require('./script/hieroglyps-vocab.js');
 // require('./script/gardiner_input.js'); IN BROWSER!
+require('./extensions.js');
 
 title='Gardiner search'
 html=read("vocab.html")
