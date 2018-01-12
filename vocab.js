@@ -1,4 +1,5 @@
-#!/usr/bin/nodemon  # nodemon ./vocab.js For automatic reload
+#!/usr/bin/env node
+// #!/usr/bin/nodemon  # nodemon ./vocab.js For automatic reload
 var fs = require('fs');
 var express = require('express');
 var app = express();
