@@ -1272,7 +1272,7 @@ function parseHex(b) {
 // setTimeout(callback, delay[, arg][, ...])
 // setInterval(callback, delay[, arg][, ...])#Schedules repeated execution of callback every delay milliseconds. Returns a intervalObject for possible
 exit = function () {
-	throw "END OF UNIVERSE REACHED"
+	throw "exit() called. END OF UNIVERSE REACHED"
 }
 
 // FAKE jQuery in one line!

@@ -11,9 +11,9 @@ var debug = require('debug')('uruk egypt:server');
 app.use('/fonts', express.static('fonts'));
 app.use('/script', express.static('script'));
 
-require('./script/hieroglyps-vocab.js');
+require('./hieroglyps-vocab.js');
 // require('./script/gardiner_input.js'); IN BROWSER!
-require('./extensions.js');
+require('./extensions.js')();
 
 title='Gardiner search'
 html=read("vocab.html")
