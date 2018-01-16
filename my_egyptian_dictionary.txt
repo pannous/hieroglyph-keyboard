@@ -1012,16 +1012,34 @@ mach Frkyruters
 maig frthnflupass
 
    beetle 𓐍𓊪𓂋𓂋𓆣 
-Käfer #k-p-r-r
+Käfer #k-p-r-r  <> carve 
 
    (divinity) Khopri   𓆣  𓂋  𓇋  𓀭 
 Chephre! Khopri Käferi 
+
+   beetle 𓐍𓊪𓂋𓂋𓆣 
+scarabae #sc-r-b ~ #c-p-r-𓂋  scarabeetle  
+
+
+   beetle    𓂝  𓊪  𓆷  𓄿  𓇋  𓇋  𓆣 
+hanphusae   الخنفسة  Arabian++   Kneifer
+scarabeetle scarabée @ LAT+FR!
+
+
+
+   shape   𓆣𓂋𓅱𓀾𓏛𓏥 
+shaperu ~ #c-p-r
 
    assume a shape   𓁹  𓆣  𓂋  𓅱  𓀾  𓏛  𓏥 
 meyk shaperu [assume]
 maig kprru statuth
 maig happen status ?
 sta.tut   𓀾
+
+
+   be, happen   𓆣𓂋 
+ḫapper ~ happen   √c-p-r
+
 
    levy the cattle - tax   𓁹  𓇋  𓁹  𓂋  𓅱  𓃒 
 maig a maigru
@@ -3854,10 +3872,8 @@ off
 aphoo
 afly
 
-   beetle    𓂝  𓊪  𓆷  𓄿  𓇋  𓇋  𓆣 
-hanphusae   الخنفسة  Arabian++
-scarabeetle scarabée @ LAT+FR!
-<>
+
+
    the Winged Disk    𓂝  𓊪  𓇋  𓇋   𓆃
 ophy™?  <>Opus   Apis Bull
 phy𓆃<>flyg
@@ -38307,3 +38323,5 @@ Very coherent[[𓎛]]
 kotauer bend=kowtow QED! +++
 cotauer ~ cotyr, kortier, eskortier, ...
 <> KNIE!?!
+
+√ root √
