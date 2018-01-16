@@ -38,7 +38,7 @@ app.get('/add',(req, res) => {
 
 
 app.get('/', (req, res) => {
-	q=req.query.q||"sankt" // Do not trim in order to preserve proper words
+	q=req.query.q||"𓆣" //sankt" // Do not trim in order to preserve proper words
 	content=find_word(q).join("<br/>")
 	content=template(content,q)
 	  res.send(content)// ONLY ONCE!
