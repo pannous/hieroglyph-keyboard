@@ -1011,7 +1011,14 @@ mach Frkyruters
    obey   𓁹  𓅓  𓍿  𓈖  𓅯  𓈐 
 maig frthnflupass
 
+   beetle 𓐍𓊪𓂋𓂋𓆣 
+Käfer #k-p-r-r
+
+   (divinity) Khopri   𓆣  𓂋  𓇋  𓀭 
+Chephre! Khopri Käferi 
+
    assume a shape   𓁹  𓆣  𓂋  𓅱  𓀾  𓏛  𓏥 
+meyk shaperu [assume]
 maig kprru statuth
 maig happen status ?
 sta.tut   𓀾
@@ -3848,7 +3855,7 @@ aphoo
 afly
 
    beetle    𓂝  𓊪  𓆷  𓄿  𓇋  𓇋  𓆣 
-hanphusae   الخنفسة +++ AR !!   <> happen! --
+hanphusae   الخنفسة  Arabian++
 scarabeetle scarabée @ LAT+FR!
 <>
    the Winged Disk    𓂝  𓊪  𓇋  𓇋   𓆃
@@ -8915,8 +8922,7 @@ aptecs: nábytek   @ CES !
 Abteil-- 
 
    (collective n.) swine, pigs   𓄿  𓊪  𓎛  𓏯 
-Aipher ~ Eber!
-Läufer?
+Äpher ~ Eber ++
 
    sickle   𓄿  𓋴  𓐍  𓌴 
 a'Sichel
@@ -12850,11 +12856,18 @@ killed fisch
    scales (of fish)   𓆠  𓏥 
    be discontented, angry   𓆡  𓏏 
 L   Insects 
+
    exist, be, come into being, become, change (into), occur, happen, come to pass   𓆣  𓂋 
+ḫaper <> happen, shape
+
    take place, be effective, go by, be past, continue (of action)   𓆣  𓂋 
+
    fully cooked (of meat)   𓆣  𓂋 
    (v. trans.) bring about   𓆣  𓂋 
+
    children   𓆣  𓂋  𓀀  𓏥 
+scarbaen~charden:children
+
    (divinity) Khopri   𓆣  𓂋  𓁷 
    (divinity) Khopri   𓆣  𓂋  𓅆 
 
@@ -12897,10 +12910,8 @@ comes am ~ camounts
 ce faire en ;)
 
    form, shape, modes of being   𓆣  𓂋  𓅱  𓀾  𓏛  𓏥 
-shaper𓅱  𓀾  𓏛  𓏥 
+shaper𓅱𓀾𓏛𓏥 
 
-   (divinity) Khopri   𓆣  𓂋  𓇋  𓀭 
-Khopri Käferi Chephre!
 
    Crown of Lower Egypt   𓆤  𓏏  𓏯 
    goddess of Lower Egypt   𓆤  𓏏  𓏯  𓆗 
@@ -15478,8 +15489,8 @@ a-whosen
    (demon. adj.) these   𓇋  𓊪  𓈖 
 
    (collective n.) swine, pigs   𓇋  𓊪  𓎛  𓃟 
-iphooer
-ipher
+ipher ~ Eber ++
+
 
    Twelfth month (name and festival)   𓇋  𓊪  𓏏  𓄛  𓁐 
 iphther

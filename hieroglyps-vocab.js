@@ -31,7 +31,7 @@ loadVocab = function () {
 // submit()" onsubmit ??
 comment_form = (l) => `
 <form action='add' method="GET" >
-	<input name='h' value='${l}' type="hidden"/>
+	<input name='h' value='${l.replace("'","’")}' type="hidden"/>
 	<input name='x' id='x' autocomplete="off"/>
 	<input type="submit" onClick="setTimeout(()=>x.value='',100)" value="+"/>
 </form>`
@@ -73,7 +73,7 @@ find_word = function (query) {
 				next = true
 		}
 		else if (!glyphs_only && line.has(qi)) {
-			res.push(last)
+			if(last)res.push(last)
 			res.push(line);
 			res.push(comment_form(line));
 			// next = true
