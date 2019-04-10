@@ -1,4 +1,9 @@
 #!/usr/bin/env node
+// test:
+ // lambda-local -h handler -l query.js -e test.js -E '{"a":"2"}'
+ // live:
+ // https://sad-fermat-621bd6.netlify.com/.netlify/functions/query
+
 fs = require("fs")
 database="database-1.cluster-cqrldnljwpmo.us-east-2.rds.amazonaws.com"
 password="HFBoLCkjwd6YkxTiV7Tl"
@@ -7,7 +12,7 @@ username="admin"
 // require("./extensions.js")()
 // path="./gardiner.tsv"
 dictionary = "my_egyptian_dictionary.csv"
-require("../gardiner_map.js")
+require("./gardiner_map.js")
 
 lines = []
 gardiners = []
