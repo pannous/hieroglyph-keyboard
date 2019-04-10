@@ -12,7 +12,7 @@ username="admin"
 // require("./extensions.js")()
 // path="./gardiner.tsv"
 dictionary = "my_egyptian_dictionary.csv"
-require("./gardiner_map.js")
+// require("./gardiner_map.js")
 
 lines = []
 gardiners = []
