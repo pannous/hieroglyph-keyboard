@@ -4,7 +4,7 @@ database="database-1.cluster-cqrldnljwpmo.us-east-2.rds.amazonaws.com"
 password="HFBoLCkjwd6YkxTiV7Tl"
 username="admin"
 
-require("./extensions.js")()
+// require("./extensions.js")()
 // path="./gardiner.tsv"
 dictionary = "my_egyptian_dictionary.csv"
 require("../gardiner_map.js")
@@ -15,7 +15,7 @@ gardiners = []
 gardiners_tsv = "../gardiner.csv"
 
 loadVocab = function () {
-	if(len(gardiners)>0)return console.log("already loaded")
+	if(gardiners.length>0)return console.log("already loaded")
 	lines = fs.readFileSync(dictionary).toString().split('\n')
 	lines.concat(fs.readFileSync("../changes.txt").toString().split('\n'))
 	gardiners = fs.readFileSync(gardiners_tsv).toString().split('\n')
@@ -51,7 +51,7 @@ find_word = function (query) {
 	// if (glyphs_only)
 	// 	res.push("glyphs_only")
 	for (line of gardiners) {
-		if (line.has(qi) || glyphs_only && line.has(glyph))
+		if (line.match(qi) || glyphs_only && line.match(glyph))
 			res.push(line)
 	}
 	res.push(comment_form(query))
@@ -72,19 +72,19 @@ find_word = function (query) {
 			last = false
 			continue
 		}
-		if (glyphs_only && glyphs.has(glyph)) {
+		if (glyphs_only && glyphs.match(glyph)) {
 				last = false
 				res.push(line)
 				next = true
 		}
-		else if (!glyphs_only && line.has(qi)) {
+		else if (!glyphs_only && line.match(qi)) {
 			if(last)res.push(last)
 			res.push(line);
 			res.push(comment_form(line));
 			// next = true
 			next = false
 		}
-		if (glyphs.has(glyph))
+		if (glyphs.match(glyph))
 			last = line
 	}
 	if (res.len = 0)
