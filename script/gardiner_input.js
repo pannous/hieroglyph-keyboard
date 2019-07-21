@@ -1,3 +1,9 @@
+// BROWSER CLIENT SIDE!
+// require("./gardiner_map.js") via script tag!
+// require("./cuneiform_map.js") via script tag!
+// if(use_cuneiforms)
+// Gardiner_Map=Cuneiform_Map
+
 function log(x) {
 	console.log(x);
 	suggestion.innerHTML = x
@@ -27,6 +33,7 @@ function insertClick(event) {
 // $("finder").autocomplete(autocompletions);
 function checkGardiner(glyph0) {
 	try {
+		Gardiner_Map=Cuneiform_Map
 		if (glyph0.length > 50) {
 			suggestion.innerHTML = ""// Heather selected
 			return
