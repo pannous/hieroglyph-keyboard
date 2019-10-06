@@ -101,34 +101,16 @@ find_word = function (query) {
 	// res.push("")
 	for (line of lines) {
 		line = line.replace("  ", " ")
+		line = line.replace("+","")
+		line = line.replace("-","")
 		if (line.len < 1) {
-			next = false;
-			last = false
 			continue
 		}
 		glyphs = line.replace(/[\w\s]*/g, '')
-		if (res.length > 200) break
-		if (next) {
+		if (glyphs.has(glyph) || line.has(qi)) {
 			res.push(line)
-			// res.push(comment_form(line))
-			next=false
-			last = false
-			continue
 		}
-		if (glyphs_only && glyphs.has(glyph)) {
-				last = false
-				res.push(line)
-				next = true
-		}
-		else if (!glyphs_only && line.has(qi)) {
-			if(last)res.push(last)
-			res.push(line);
-			// res.push(comment_form(line));
-			// next = true
-			next = false
-		}
-		if (glyphs.has(glyph))
-			last = line
+		if (res.length > 200) break
 	}
 	res=format_table(res)
 	if (res.len = 0)
