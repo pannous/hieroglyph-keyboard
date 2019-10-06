@@ -69,12 +69,10 @@ loadVocab = function () {
 	gardiners = readlines(gardiners_tsv)
 	// codes = readlines(gardiner_codes)
 	gardiners2=gardiners.map(x=>x.split("\t"))
-	loadCuneiforms()
+	// loadCuneiforms()
 }
 loadVocab()
-console.log(cuneiforms['a'])
-console.log(cuneiforms['beer'])
-console.log(cuneiforms['kar'])
+// console.log(cuneiforms['kar'])
 
 // target="_none"
 //  POST wtf
