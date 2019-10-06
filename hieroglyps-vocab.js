@@ -107,7 +107,7 @@ find_word = function (query) {
 			continue
 		}
 		glyphs = line.replace(/[\w\s]*/g, '')
-		if (glyphs.has(glyph) || line.has(qi)) {
+		if (glyphs_only && glyphs.has(glyph) || line.has(qi)) {
 			res.push(line)
 		}
 		if (res.length > 200) break
@@ -124,6 +124,8 @@ function format_table(res){
 	for(line of res){
 		line=line.replace(/(.*?)\/.*?$/,"$1") // drop other comments
 		// line=line.replace(/(.*)\|.*?$/,"$1") # drop comment
+		line=line.replaceAll("\t\t","")
+		line=line.replaceAll("\t","|")
 		line=line.replace("|","</td><td>")
 		line=line.replace("|","</td><td>")
 		line=line.replace("|","</td><td>")
