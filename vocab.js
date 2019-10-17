@@ -29,7 +29,7 @@ app.get('/add',(req, res) => {
       // console.log( req)
 	line=req.query.h
 	text=req.query.x||req.query.q
-    if(text && text!=last && text.length>0)
+    if(fs && text && text!=last && text.length>0)
 	    fs.appendFile('changes.txt',line+"\n"+text+"\n\n")
        text=last
 	res.status(204);// no content
