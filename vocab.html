@@ -16,13 +16,15 @@
     <br/>
     <input id="q" name="q" value="${q}" style="background:lightyellow;width:300px;heigth:30px" autofocus width="500" onFocus="this.select();" onKeyUp="checkGardiner(this.value)" autocomplete="off" />
     <input type="submit" value="OK"/>
-    <select id="scripture">
+    <!-- <select id="scripture">
         <option>Hieroglyps</option>
         <option>Cuneiform</option>
-    </select>
+    </select> -->
+
     <a onClick="postText('${q}',q.value);q.value=''">[+]</a>
     <a onClick="q.value='';q.focus()">[-]</a>
     <button onClick="window.location.reload();">[♽]</button>
+    <a href="https://github.com/pannous/hieros/wiki">wiki</a>
     <br/>
     <table id='select_table' onClick="selectClick(event)">
         <tr><td>𓀁</td><td>𓁐</td><td>𓁚</td><td>𓁶</td><td>𓃒</td><td>𓃾</td><td>𓄿</td><td>𓅿</td><td>𓆐</td><td>𓆛</td><td>𓆣</td><td>𓆭</td><td>𓇳</td><td>𓊖</td><td>𓊢</td><td>𓊨</td><td>𓊹</td><td>𓋑</td><td>𓌉</td><td>𓌳</td><td>𓍢</td><td>𓎯</td><td>𓏏</td><td>𓏜</td><td>𓏤</td><td>𓐍</td> </tr>
