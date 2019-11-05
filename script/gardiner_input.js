@@ -33,7 +33,7 @@ function insertClick(event) {
 // $("finder").autocomplete(autocompletions);
 function checkGardiner(glyph0) {
 	try {
-		use_cuneiforms = scripture.value=="Cuneiform"
+		use_cuneiforms = false;// scripture.value=="Cuneiform"
 		if(use_cuneiforms)
 			Gardiner_Map=Cuneiform_Map
 		if (glyph0.length > 50) {
