@@ -129,6 +129,8 @@ function format_table(res){
 		line=line.replace("|","</td><td>")
 		line=line.replace("|","</td><td>")
 		line=line.replace("|","</td><td>")
+				line=line.replace(/\/\s*$/,'')
+				line=line.replaceAll("|"," / ") // remaining ones
 		table+="<tr><td>"+line+"</td></tr>"
 	}
 	table+=["</table>"]
