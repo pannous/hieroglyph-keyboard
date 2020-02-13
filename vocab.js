@@ -20,18 +20,22 @@ html=read("vocab.html")
 template=()=>eval("`"+html+"`") // ()=>`...`
 
 // app.post('/add', // npm install --save body-parser WTF
-last=""
       
 // app.post('/add',(req, res) => {
 //       req.body.q  vs req.query in 'GET'
+
+last=""
+function append(line,text){
+	  if(fs && text && text!=last && text.length>0)
+	    fs.appendFile('changes.txt',line+"||"+text+"\n",_=>0)
+       last=text
+}
 
 app.get('/add',(req, res) => {
       // console.log( req)
 	line=req.query.h
 	text=req.query.x||req.query.q
-    if(fs && text && text!=last && text.length>0)
-	    fs.appendFile('changes.txt',line+"\n"+text+"\n\n")
-       text=last
+  append(line,text)
 	res.status(204);// no content
 	res.send("{'OK'}")//  necessary, what the flock
 });
@@ -39,6 +43,8 @@ app.get('/add',(req, res) => {
 
 app.get('/', (req, res) => {
 	q=req.query.q||"𓆣" //sankt" // Do not trim in order to preserve proper words
+	q=q.replace(/  /g," ")
+	if(q.contains("="))append(q.split("=")[0],q.split("=")[1])
 	content=find_word(q).join("<br/>")
 	content=template(content,q)
 	  res.send(content)// ONLY ONCE!

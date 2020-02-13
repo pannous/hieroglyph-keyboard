@@ -87,18 +87,37 @@ comment_form = (l) => `
 next = false
 find_word = function (query) {
 	query = query.replace(/\-/g, " ")
+	query = query.replace(/=.*/g, "")
+	query = query.replace(/%3D.*/g, "")
+	console.log(query)
 	qi = new RegExp(query, "i")
+	qix = new RegExp("\b"+query+"\b", "i")
 	glyph = query.replace(/[\w\s]*/g, '')
 	glyphs_only = glyph.len > 0
 	res = []
 	// if (glyphs_only)
 	// 	res.push("glyphs_only")
+
+	for (line of gardiners) // exact first
+		if (line.has(qix)) res.push(line)
+	
+
 	for (line of gardiners) {
 		if (line.has(qi) || glyphs_only && line.has(glyph))
 			res.push(line)
 	}
 	// res.push(comment_form(query))
 	// res.push("")
+
+	// for (line of lines) // exact first
+	// 	if (line.has("|"+qi+"|"))
+	// 		res.push(line)
+
+	for (line of lines) // exact first
+		if (line.has(qix))
+			res.push(line)
+	
+
 	for (line of lines) {
 		line = line.replace("  ", " ")
 		line = line.replace("+","")
@@ -121,7 +140,9 @@ find_word = function (query) {
 function format_table(res){
 	table=[]
 	table+=["<table class='sorted'>"]
+	max=1000
 	for(line of res){
+		if(max--<0)break
 		line=line.replace(/(.*?)\/.*?$/,"$1") // drop other comments
 		// line=line.replace(/(.*)\|.*?$/,"$1") # drop comment
 		line=line.replaceAll("\t\t","")
