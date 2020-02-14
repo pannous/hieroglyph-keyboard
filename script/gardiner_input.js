@@ -25,6 +25,7 @@ function insertClick(event) {
 		glyph = glyph.replace(/\w*/, "")
 		// glyph=event.target.text.replace(/\w*/,"")
 		taxt.value = taxt.value.replace(/[A-Z]+/, " ") + glyph
+		taxt.value = taxt.value.replace("  "," ")
 		taxt.focus()
 	}
 
