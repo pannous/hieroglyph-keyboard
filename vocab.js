@@ -43,7 +43,7 @@ app.get('/add',(req, res) => {
 
 app.get('/', (req, res) => {
 	q=req.query.q||"𓆣" //sankt" // Do not trim in order to preserve proper words
-	q=q.replace(/  /g," ")
+	q=q.replace(/  /g," ").trim()
 	if(q.contains("="))append(q.split("=")[0],q.split("=")[1])
 	content=find_word(q).join("<br/>")
 	content=template(content,q)
