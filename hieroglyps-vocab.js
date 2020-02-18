@@ -132,9 +132,11 @@ find_word = function (query) {
 		if (res.length > 200) break
 	}
 
-  subglyphs=lines// ignore order
+if(glyphs_only){
+  subglyphs=lines// now ignore order
   for(sign of glyph)subglyphs=subglyphs.filter(glyphs=>glyphs.contains(sign))
-  for(line of subglyphs)res.push(line)
+  for(line of subglyphs)if(!res.has(line))res.push(line)
+}
 
 	res=format_table(res)
 	if (res.len = 0)
