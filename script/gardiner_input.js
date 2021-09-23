@@ -50,7 +50,8 @@ function checkGardiner(glyph0) {
 		for (a in Gardiner_Map) {
 			qi = new RegExp("^" + glyph + "\\d", "i")//
 			matches = a.match(qi) || a == q || a.startsWith(glyph)
-			a_short=use_cuneiforms?a:a.replace(/[A-Z]+/, "")
+			a_short=use_cuneiforms?a:a.replace(/[A-ZÄÖÜ]+/, "")
+			a_short=a_short.replaceAll(/_.*/g,"")
 			// matches=(a+"").startsWith(glyph)
 			if (matches && count++ < 180) {
 				sign=Gardiner_Map[a]
