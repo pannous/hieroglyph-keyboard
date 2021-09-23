@@ -98,7 +98,7 @@ find_word = function (query) {
 	// if (glyphs_only)
 	// 	res.push("glyphs_only")
 
-	for (line of gardiners) // exact first
+	for (line of gardiners) // exact signs first
 		if (line.has(qix)) res.push(line)
 	
 
@@ -106,19 +106,29 @@ find_word = function (query) {
 		if (line.has(qi) || glyphs_only && line.has(glyph))
 			res.push(line)
 	}
+
 	// res.push(comment_form(query))
 	// res.push("")
 
-	// for (line of lines) // exact first
-	// 	if (line.has("|"+qi+"|"))
-	// 		res.push(line)
+  let handled={}
+	for (line of lines){ // exact translation first
+		let rows=line.split("|")
+			if(rows && rows.length>1 && rows[1].has(" "+query+" ")){
+				res.push(line)
+				handled[line]=1
+			}
+	}
 
-	for (line of lines) // exact first
-		if (line.has(qix))
+	for (line of lines) // exact mnemos second
+		if (line.has(qix) && !handled[line]){
 			res.push(line)
+			handled[line]=1
+		}
 	
 
 	for (line of lines) {
+		if(handled[line])continue
+
 		line = line.replace("  ", " ")
 		line = line.replace("+","")
 		line = line.replace("-","")
@@ -127,6 +137,7 @@ find_word = function (query) {
 		}
 		glyphs = line.replace(/[\w\s]*/g, '')
 		if (glyphs_only && glyphs.has(glyph) || line.has(qi)) {
+			if(!handled[line])
 			res.push(line)
 		}
 		if (res.length > 200) break

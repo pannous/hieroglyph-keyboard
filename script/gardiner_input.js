@@ -8,6 +8,7 @@ function log(x) {
 	console.log(x);
 	suggestion.innerHTML = x
 }
+
 var clicked=0
 function selectClick(event) {
 	clicked=true
@@ -32,6 +33,8 @@ function insertClick(event) {
 }
 
 // $("finder").autocomplete(autocompletions);
+
+// fills the 8x8 table with gardiner signs
 function checkGardiner(glyph0) {
 	try {
 		use_cuneiforms = false;// scripture.value=="Cuneiform"
