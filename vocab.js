@@ -50,6 +50,10 @@ app.get('/', (req, res) => {
 	  res.send(content)// ONLY ONCE!
 });
 
+
+// const serverless = require("serverless-http");
+// module.exports.handler = serverless(app);
+
 app.listen(port, function () {
 	loadVocab();
 	// console.log(find_word("mouth"));
@@ -58,3 +62,4 @@ app.listen(port, function () {
 	 // 	browse("http://localhost:"+port)	  	
 	 // }catch(ex){}
 });
+

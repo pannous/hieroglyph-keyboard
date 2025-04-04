@@ -8,3 +8,5 @@ rsync -av  /Users/me/Documents/uruk_egypt/my_egyptian_dictionary.csv pannous.com
 
 ssh pannous.com ./restart-services.sh
  # screen -R hierokeys ; cd ~/hieroglyph-keyboard; gp; ./vocab.js
+
+# echo https://hierokeys.netlify.app NO!
