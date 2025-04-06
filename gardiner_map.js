@@ -3007,6 +3007,13 @@ Gardiner_Map={ '1': '𓏤',
   '2D':'𓊕',
   'yun':'𓇋 𓆛 𓈖',
   KHEPER:'𓆣',
-  BA1:'𓃝'
+  HELIOPOLIS:'𓉺',
+  BA1:'𓃝',
+  MENKH:'𓍊',
+  SMENKH:'𓋴𓍊',
+  SMENKA:'𓋴𓍊𓂓',
+  amen:'𓇋𓏠𓈖',
+  AMUN1:'𓇋 𓏠 𓈖',
+  HEKA:'𓋾' // no trailing comma?
 }
 //  WORDS HAVE TO BE UPPERCASE (wegen script/gardiner_input.js)
